@@ -103,8 +103,11 @@ ai:
     store:
         postgres:
             symfony_blog:
-                dbal_connection: 'doctrine.dbal.default_connection'
+                dsn: '%env(AMAZEEAI_VDB_DSN)%'
+                username: '%env(AMAZEEAI_VDB_USER)%'
+                password: '%env(AMAZEEAI_VDB_PASSWORD)%'
                 table_name: 'symfony_blog'
+                vector_field: 'embedding'
                 distance: 'cosine'
     vectorizer:
         amazeeai:
