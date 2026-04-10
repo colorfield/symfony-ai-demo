@@ -2,6 +2,9 @@ ai:
     platform:
         openai:
             api_key: '%env(OPENAI_API_KEY)%'
+        amazeeai:
+            base_url: '%env(AMAZEEAI_LLM_API_URL)%'
+            api_key: '%env(AMAZEEAI_LLM_KEY)%'
         huggingface:
             api_key: '%env(HUGGINGFACE_API_KEY)%'
     agent:
