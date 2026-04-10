@@ -1,6 +1,27 @@
-# Symfony AI - Demo Application
+# Symfony AI - Demo Application using amazee.ai
 
-Symfony application demoing Symfony AI components.
+Symfony application demoing Symfony AI components with the amazee.ai VDB and LLM providers.
+
+## Quick start
+
+Install dependencies
+
+```bash
+composer install
+```
+
+Require amazee.ai credentials,
+this will populate the environment variables.
+
+```bash
+php bin/console ai:amazee:configure user@example.com
+```
+
+Start the server
+
+```bash
+symfony serve -d
+```
 
 ## Examples
 
@@ -15,7 +36,7 @@ What you need to run this demo:
 * [Git](https://git-scm.com/) & [GitHub Account](https://github.com)
 * [Docker](https://www.docker.com/) with [Docker Compose Plugin](https://docs.docker.com/compose/)
 * Your Favorite IDE or Editor
-* An [OpenAI API Key](https://platform.openai.com/docs/api-reference/create-and-export-an-api-key)
+* Optional: an [OpenAI API Key](https://platform.openai.com/docs/api-reference/create-and-export-an-api-key) - for Speech STT/TTS only
 
 ## Technology
 
@@ -24,7 +45,7 @@ This small demo sits on top of following technologies:
 * [PHP >= 8.4](https://www.php.net/releases/8.4/en.php)
 * [Symfony 8.0 incl. Twig, Asset Mapper & UX](https://symfony.com/)
 * [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-* [OpenAI's GPT & Embeddings](https://platform.openai.com/docs/overview)
+* [amazee.ai](https://amazee.ai/)
 * [PostgreSQL with pgvector](https://github.com/pgvector/pgvector)
 * [FrankenPHP](https://frankenphp.dev/)
 
@@ -40,7 +61,6 @@ Checkout the repository, start the docker environment and install dependencies:
 git clone git@github.com:symfony/ai-demo.git
 cd ai-demo
 composer install
-docker compose up -d
 symfony serve -d
 ```
 
@@ -51,6 +71,8 @@ and the chatbot UI should be available for you to start chatting.
 > You might have to bypass the security warning of your browser with regard to self-signed certificates.
 
 ### 2. OpenAI Configuration
+
+**Optional** for speech only.
 
 For using GPT and embedding models from OpenAI, you need to configure an OpenAI API key as environment variable.
 This requires you to have an OpenAI account, create a valid API key and set it as `OPENAI_API_KEY` in `.env.local` file.
