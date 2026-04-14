@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4b513a91f8ab6cff703642d8238025c",
+    "content-hash": "eb587534a50eafe38f5a79b29f3efcb6",
     "packages": [
         {
             "name": "amazeeio/symfony-amazeeai-configure",
@@ -46,11 +46,7 @@
                     "AmazeeIo\\AmazeeAiConfigure\\": "src/"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "AmazeeIo\\AmazeeAiConfigure\\Tests\\": "tests/"
-                }
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -66,8 +62,8 @@
                 "amazee.io"
             ],
             "support": {
-                "source": "https://github.com/amazeeio-solutions/symfony-amazeeai-configure/tree/0.0.1",
-                "issues": "https://github.com/amazeeio-solutions/symfony-amazeeai-configure/issues"
+                "issues": "https://github.com/amazeeio/symfony-amazeeai-configure/issues",
+                "source": "https://github.com/amazeeio/symfony-amazeeai-configure/tree/0.0.1"
             },
             "time": "2026-02-06T11:41:22+00:00"
         },
